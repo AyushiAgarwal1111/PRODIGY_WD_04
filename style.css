@@ -1,0 +1,115 @@
+:root {
+  --olive: #64724A;
+  --rust: #A44E34;
+  --mustard: #D9A349;
+  --cream: #F5ECE1;
+  --slate: #334B55;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: var(--slate);
+  background-color: var(--cream);
+}
+
+/* Navigation */
+nav {
+  background-color: var(--rust);
+  color: var(--cream);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--mustard);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: var(--olive);
+  color: var(--cream);
+}
+
+.hero .profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Section */
+.section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--rust);
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: var(--mustard);
+  color: var(--slate);
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Projects */
+.project {
+  background-color: var(--cream);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-top: 4px solid var(--olive);
+}
+
+/* Footer */
+footer {
+  background-color: var(--slate);
+  color: var(--cream);
+  text-align: center;
+  padding: 20px;
+}
